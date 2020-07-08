@@ -1,0 +1,41 @@
+﻿  Application.cpp
+c:\dev\bezier\bezier\src\bezier.h(25): warning C4091: 'static ': ignored on left of 'Bezier::OrderType' when no variable is declared
+c:\dev\bezier\bezier\src\bezier.h(47): warning C4244: 'argument': conversion from 'unsigned int' to 'GLfloat', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(58): warning C4018: '<': signed/unsigned mismatch
+c:\dev\bezier\bezier\src\bezier.h(86): warning C4018: '<': signed/unsigned mismatch
+c:\dev\bezier\bezier\src\bezier.h(101): warning C4018: '<': signed/unsigned mismatch
+  TempFIleForTest.cpp
+  Generating Code...
+Application.obj : error LNK2019: unresolved external symbol _glewInit@0 referenced in function _main
+Application.obj : error LNK2019: unresolved external symbol _glfwInit referenced in function _main
+Application.obj : error LNK2019: unresolved external symbol _glfwTerminate referenced in function _main
+Application.obj : error LNK2019: unresolved external symbol _glfwCreateWindow referenced in function _main
+Application.obj : error LNK2019: unresolved external symbol _glfwWindowShouldClose referenced in function _main
+Application.obj : error LNK2019: unresolved external symbol _glfwSetWindowShouldClose referenced in function "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z)
+Application.obj : error LNK2019: unresolved external symbol _glfwPollEvents referenced in function _main
+Application.obj : error LNK2019: unresolved external symbol _glfwGetKey referenced in function "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z)
+Application.obj : error LNK2019: unresolved external symbol _glfwMakeContextCurrent referenced in function _main
+Application.obj : error LNK2019: unresolved external symbol _glfwSwapBuffers referenced in function _main
+Application.obj : error LNK2001: unresolved external symbol ___glewBindBuffer
+Application.obj : error LNK2001: unresolved external symbol ___glewBufferData
+Application.obj : error LNK2001: unresolved external symbol ___glewGenBuffers
+Application.obj : error LNK2001: unresolved external symbol ___glewAttachShader
+Application.obj : error LNK2001: unresolved external symbol ___glewCompileShader
+Application.obj : error LNK2001: unresolved external symbol ___glewCreateProgram
+Application.obj : error LNK2001: unresolved external symbol ___glewCreateShader
+Application.obj : error LNK2001: unresolved external symbol ___glewDeleteProgram
+Application.obj : error LNK2001: unresolved external symbol ___glewDeleteShader
+Application.obj : error LNK2001: unresolved external symbol ___glewEnableVertexAttribArray
+Application.obj : error LNK2001: unresolved external symbol ___glewGetProgramInfoLog
+Application.obj : error LNK2001: unresolved external symbol ___glewGetProgramiv
+Application.obj : error LNK2001: unresolved external symbol ___glewGetShaderInfoLog
+Application.obj : error LNK2001: unresolved external symbol ___glewGetShaderiv
+Application.obj : error LNK2001: unresolved external symbol ___glewLinkProgram
+Application.obj : error LNK2001: unresolved external symbol ___glewShaderSource
+Application.obj : error LNK2001: unresolved external symbol ___glewUseProgram
+Application.obj : error LNK2001: unresolved external symbol ___glewVertexAttribPointer
+Application.obj : error LNK2001: unresolved external symbol ___glewBindVertexArray
+Application.obj : error LNK2001: unresolved external symbol ___glewGenVertexArrays
+C:\dev\Bezier\Dependency\GLEW\lib\glew32s.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\dev\Bezier\Dependency\GLFW\lib\glfw3.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\dev\Bezier\Debug\Bezier.exe : fatal error LNK1120: 30 unresolved externals

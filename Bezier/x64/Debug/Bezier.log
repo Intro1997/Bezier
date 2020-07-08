@@ -1,0 +1,18 @@
+﻿  Application.cpp
+c:\dev\bezier\bezier\src\bezier.h(12): warning C4091: 'static ': ignored on left of 'Bezier::OrderType' when no variable is declared
+c:\dev\bezier\bezier\src\bezier.h(74): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(176): warning C4018: '<': signed/unsigned mismatch
+c:\dev\bezier\bezier\src\bezier.h(177): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(178): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(186): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(187): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(201): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(202): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(228): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(266): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(271): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(273): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(316): warning C4018: '<=': signed/unsigned mismatch
+c:\dev\bezier\bezier\src\bezier.h(319): warning C4018: '<=': signed/unsigned mismatch
+c:\dev\bezier\bezier\src\bezier.h(343): warning C4018: '<': signed/unsigned mismatch
+  Bezier.vcxproj -> C:\dev\Bezier\x64\Debug\Bezier.exe

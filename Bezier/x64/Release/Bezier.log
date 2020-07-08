@@ -1,0 +1,26 @@
+﻿  Application.cpp
+c:\dev\bezier\bezier\src\bezier.h(12): warning C4091: 'static ': ignored on left of 'Bezier::OrderType' when no variable is declared
+c:\dev\bezier\bezier\src\bezier.h(74): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(176): warning C4018: '<': signed/unsigned mismatch
+c:\dev\bezier\bezier\src\bezier.h(177): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(178): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(186): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(187): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(201): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(202): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(228): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(266): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(271): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(273): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\dev\bezier\bezier\src\bezier.h(316): warning C4018: '<=': signed/unsigned mismatch
+c:\dev\bezier\bezier\src\bezier.h(319): warning C4018: '<=': signed/unsigned mismatch
+c:\dev\bezier\bezier\src\bezier.h(343): warning C4018: '<': signed/unsigned mismatch
+  TempFIleForTest.cpp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  455 of 455 functions (100.0%) were compiled.
+    454 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\dev\Bezier\x64\Release\vc120.pdb'; linking object as if no debug info
+  Bezier.vcxproj -> C:\dev\Bezier\x64\Release\Bezier.exe
