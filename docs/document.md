@@ -76,6 +76,7 @@ $$B^{(n)}(t) =\sum^{n}_{i=0}C^{i}_{n}t^{i}(1-t)^{n-i}P_{i}$$
 
 我们从一步一步开始看。
 **1. 用户给出控制点坐标**
+
 &emsp;&emsp;方便起见，这里我们用 float 数组标记输入的坐标：
 ```c++
 float positions[] = {
@@ -85,8 +86,10 @@ float positions[] = {
 }
 ```
 **2. 根据不同阶数实现贝塞尔曲线函数，以计算曲线上的采样点**
+
 &emsp;&emsp;贝塞尔曲线函数本身的参数其实不是很重要，重要的是如何从用户输入的数据中提取控制点坐标，用高效，简洁的方式计算出曲线上的采样点。我在中间想了两种方法：
 **第一种方法**：
+
 &emsp;&emsp;将读取到的数据，按照 x，y 的方式存入一个 vector2 数组，vector2 是需要自己构建的结构体：
 ```
 struct vector2{
@@ -96,6 +99,7 @@ struct vector2{
 ```
 再根据贝塞尔曲线的阶数，确定一个循环读取几个控制点坐标。但这样就意味着，我们需要额外拷贝一份儿数据，增加空间成本（这里可以用修改编译器对地址解析的方式，让编译器按照 vector2 类型的规则读取数据，例如将 const float* 转换为 const vector2*，但是比较危险）。
 **第二种方法**：
+
 &emsp;&emsp;既然最终都是要根据阶数取偏移量，我们为什么不直接在原数据上取控制点坐标呢？如下图所示：
 <div align=center>   
 <img src='img/load_point.PNG'>
@@ -153,6 +157,7 @@ void InitializePositions(OrderType type) {
 #### 2.1.3 采样点之间的连接
 &emsp;&emsp;由于 OpenGL 提供了关于直线绘制的底层实现，我在正真实现之前，也考虑过几种方法：
 **1. 使用 GL_LINES**
+
 &emsp;&emsp;OpenGL 底层实现了直线绘制的方法，我们只需要调用 glDrawArray()，并设置绘制模式为 GL_LINES，给出起始坐标下标和结束坐标下标即可。但是 GL_LINES 并不能满足我们的需要这与它的连接方式有关，如下图所示：
 示：
 <div align=center>   
@@ -161,6 +166,7 @@ void InitializePositions(OrderType type) {
 
 按照输入的顺序，每两个点读取一次，只连接读取到的两个点。这样绘制出的曲线，其样式和虚线一样，如果要在这种方法中给出连续的曲线，需要添加额外数据。本例中，需要额外添加 2，3 两点的坐标，造成数据冗余。
 **2. 使用 GL_LINE_STRIP**
+
 &emsp;&emsp;我们希望的是将所有点按顺序连接起来，形成连续的曲线，并且尽可能地减少数据量，GL_LINE_STRIP 满足我们的需求，其连接方式如下图所示：
 <div align=center>   
 <img src='img/connect_2.png'>
